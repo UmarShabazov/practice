@@ -10,7 +10,7 @@ public class Matrix {
 
 
 //        int[][] matrix = matrix1(m,n);
-//        int[][] matrix = matrix2(m,n);
+        int[][] matrix = matrix2(m,n);
 //        int[][] matrix = matrix3(m,n);
 
 
@@ -34,7 +34,18 @@ public class Matrix {
        return matrix;
     }
 
-
+    /**
+     * Creates matrix and fills it with numbers in snake manner
+     * <pre>
+     * M=3 N=5
+     * 1  2  3  4  5
+     * 10 9  8  7  6
+     * 11 12 13 14 15
+     * </pre>
+     * @param m - height
+     * @param n - width
+     * @return filled matrix
+     */
     public static int[][] matrix2(int m, int n) {
 
         int[][] matrix = new int[m][n];
