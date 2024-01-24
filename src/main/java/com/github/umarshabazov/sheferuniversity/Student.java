@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Student {
 
-
     public String name;
     public String grade;
 

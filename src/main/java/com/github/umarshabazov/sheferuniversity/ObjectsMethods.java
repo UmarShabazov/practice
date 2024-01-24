@@ -20,6 +20,8 @@ public class ObjectsMethods {
         System.out.println(ivanov.equals(ivanov2));
         System.out.println(ivanov==ivanov2);
 
+        // добавить Петю
+
     }
 }
 
