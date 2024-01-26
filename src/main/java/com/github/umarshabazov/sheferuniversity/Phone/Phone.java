@@ -5,12 +5,13 @@ package com.github.umarshabazov.sheferuniversity.Phone;
 public class Phone {
 
     public int number;
+
     public int weight;
     public String model;
 
 
 
-//   2.Создайте три экземпляра этого класса.
+//   2.Создайте три экземпляра этого класса. description
 // Созданы в классе PhoneObjects
 
     //3.Выведите на консоль значения их переменных.
