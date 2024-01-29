@@ -10,7 +10,6 @@ public class PhoneObjects {
         iPhone.model = "5S";
 
         iPhone.receiveCall("Chuck");
-        System.out.println(iPhone.receiveCall("Chuck"));
 
         System.out.println(iPhone.getNumber(92553343));
         System.out.println();
@@ -34,5 +33,10 @@ public class PhoneObjects {
         System.out.println();
         System.out.println(nokia);
         System.out.println();
+
+//        9.. Добавьте перегруженный метод receiveCall, который принимает два параметра
+        nokia.receiveCall("Chuck", 19239);
+//10.
+        nokia.sendMessage(923, 19231, 12312, 1111);
     }
 }
