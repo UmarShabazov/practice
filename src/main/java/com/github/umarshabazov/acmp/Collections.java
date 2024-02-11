@@ -1,13 +1,15 @@
 package com.github.umarshabazov.acmp;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 public class Collections {
     public static void main(String[] args) {
 
 //        list1();
 //        set1();
-        queue1();
+//        queue1();
+     map1();
     }
 
     private static void queue1() {
@@ -96,6 +98,50 @@ public class Collections {
 
         }
         System.out.println(evenNumbers);
+
+    }
+
+    public static void map1() {
+
+        HashMap <String, Integer> names2Age = new HashMap<>();
+
+        names2Age.put("Ivan",17);
+        names2Age.put("Alisa", 25);
+        names2Age.put("John",21);
+        names2Age.put("Aladdin",1300);
+
+
+        System.out.println(names2Age);
+
+        System.out.println(names2Age.containsKey("Ivan"));
+        System.out.println(names2Age.containsKey("Boris"));
+
+        names2Age.remove("Ivan");
+        System.out.println(names2Age.containsKey("Ivan"));
+
+        if (!names2Age.containsKey("Masha")) {
+            names2Age.put("Masha", 19);
+        }
+
+        System.out.println(names2Age);
+
+        names2Age.put("Aladdin", names2Age.get("Aladdin") + 1);
+        System.out.println(names2Age);
+
+
+        System.out.println(names2Age.keySet());
+
+        System.out.println(names2Age.entrySet());
+
+
+        Set<Entry<String, Integer>> entries = names2Age.entrySet();
+        System.out.println(entries);
+
+        for (Entry<String, Integer> entry : entries) {
+            if (entry.getKey().startsWith("A")) {
+                System.out.println(entry);
+            }
+        }
 
     }
 }
