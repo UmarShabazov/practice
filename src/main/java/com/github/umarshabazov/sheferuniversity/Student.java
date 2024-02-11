@@ -7,6 +7,29 @@ public class Student {
     public String name;
     public String grade;
 
+    public static class Grade {
+
+        public int number;
+        public String letter;
+
+        @Override
+        public String toString() {
+            return "Это " + number + " "+ letter + " класс.";
+        }
+
+
+    }
+
+    public Student(String name, String grade) {
+
+        if (name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Incorrect student name " + name);
+        }
+        this.name = name;
+        this.grade = grade;
+    }
+
+
     @Override
     public String toString() {
         return "Hello, my name is " + name + ". I am in " + grade + " grade.";
